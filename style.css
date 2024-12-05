@@ -1,89 +1,98 @@
-/* Styles globaux */
-body {
-    font-family: 'Arial', sans-serif;
+/* Réinitialisation */
+* {
     margin: 0;
     padding: 0;
-    background: #1e1e2e;
-    color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+/* Corps */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121214;
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
-/* Section Hero */
-.hero {
-    background: linear-gradient(to right, #5865f2, #1e1e2e);
-    color: #fff;
-    padding: 4rem 2rem;
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e2e;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #5865f2;
+    border-radius: 5px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to bottom, #5865f2, #1e1e2e);
     text-align: center;
+    padding: 4rem 2rem;
 }
 
-.hero h1 span {
+.header-content h1 {
     color: #ffcc00;
+    font-size: 2.5rem;
 }
 
-/* Bouton principal */
 .cta {
-    display: inline-block;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0.8rem 1.5rem;
     background: #ffcc00;
     color: #1e1e2e;
-    font-weight: bold;
-    text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .cta:hover {
     background: #e6b800;
 }
 
-/* Coaching Section */
-.section-coaching {
-    padding: 3rem 1rem;
-    background: #2a2a40;
+/* Section Coaching */
+.games {
+    padding: 2rem 1rem;
+    background: #1e1e2e;
+    text-align: center;
 }
 
-.game-list {
+.game-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 
 .game-card {
-    background: #1e1e2e;
-    color: #ffcc00;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #2a2a40;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .game-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Témoignages */
-.testimonials {
-    padding: 3rem 1rem;
-    text-align: center;
-    background: linear-gradient(to right, #ffcc00, #1e1e2e);
-}
-
-.testimonial-card {
-    background: white;
-    color: black;
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1rem auto;
-    max-width: 600px;
 }
 
 /* Footer */
-footer {
-    background: #121214;
-    color: #fff;
+.footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    background: #0f0f10;
 }

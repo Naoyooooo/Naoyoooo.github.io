@@ -3,62 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skill's Buff - Coaching premium pour les gamers.">
+    <meta name="description" content="Skill's Buff - Coaching professionnel pour gamers.">
     <title>Skill's Buff - Boostez vos Compétences</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header dynamique -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>🎮 Bienvenue sur <span>Skill's Buff</span></h1>
-            <p>Boostez vos compétences sur Fortnite, Rocket League, CS2, LoL et Valorant avec nos coachs professionnels.</p>
-            <a href="#games" class="cta">Explorez nos coachings</a>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">🎮 Skill's Buff</div>
+            <ul class="nav-links">
+                <li><a href="#games">Coaching</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Améliorez votre jeu avec Skill's Buff</h1>
+            <p>Des coachs professionnels pour Fortnite, Rocket League, CS2, League of Legends et Valorant.</p>
+            <a href="#contact" class="cta">Rejoignez-nous</a>
         </div>
     </header>
 
     <!-- Section Coaching -->
-    <section id="games" class="section-coaching">
-        <h2>Nos Programmes de Coaching</h2>
-        <div class="game-list">
+    <section id="games" class="games">
+        <h2>Nos Coachings</h2>
+        <div class="game-cards">
             <div class="game-card">
                 <h3>Fortnite</h3>
-                <p>Apprenez les techniques de build et de combat pour dominer l’arène.</p>
+                <p>Perfectionnez vos builds et vos combats pour devenir un champion.</p>
             </div>
             <div class="game-card">
                 <h3>Rocket League</h3>
-                <p>Maîtrisez le contrôle de la balle et montez jusqu'au rang Champion !</p>
+                <p>Dominez les arènes grâce à nos techniques de jeu avancées.</p>
             </div>
             <div class="game-card">
                 <h3>CS2</h3>
-                <p>Optimisez votre précision et stratégie pour des victoires éclatantes.</p>
+                <p>Améliorez votre visée et vos stratégies en match.</p>
             </div>
             <div class="game-card">
                 <h3>League of Legends</h3>
-                <p>Comprenez les macro et devenez le joueur clutch de votre équipe.</p>
+                <p>Maîtrisez les macro-stratégies et portez votre équipe à la victoire.</p>
             </div>
             <div class="game-card">
                 <h3>Valorant</h3>
-                <p>Perfectionnez vos mécaniques et la maîtrise des agents.</p>
+                <p>Optimisez vos mécaniques et votre communication d'équipe.</p>
             </div>
         </div>
     </section>
 
-    <!-- Témoignages Clients -->
+    <!-- Section Témoignages -->
     <section id="testimonials" class="testimonials">
-        <h2>Ce que disent nos clients</h2>
-        <div class="carousel">
+        <h2>Témoignages</h2>
+        <div class="testimonial-cards">
             <div class="testimonial-card">
-                <p>"Skill's Buff m'a transformé en maître du build sur Fortnite. C'est incroyable !"</p>
+                <p>"Skill's Buff m'a permis d'atteindre le niveau Champion dans Rocket League en un mois."</p>
                 <span>- Alex</span>
             </div>
             <div class="testimonial-card">
-                <p>"Grâce à leur coaching Rocket League, je suis enfin Champion. Merci !"</p>
+                <p>"Le coaching sur Fortnite a changé ma manière de jouer. Merci !"</p>
                 <span>- Mélanie</span>
             </div>
             <div class="testimonial-card">
-                <p>"Le coaching Valorant m'a permis de devenir un stratège redoutable."</p>
+                <p>"Grâce à leur coaching Valorant, j'ai atteint le rang Immortel."</p>
                 <span>- Karim</span>
             </div>
         </div>
@@ -66,30 +75,30 @@
 
     <!-- Section FAQ -->
     <section id="faq" class="faq">
-        <h2>Foire Aux Questions</h2>
+        <h2>FAQ</h2>
         <div class="faq-item">
-            <h3>Quels sont vos tarifs ? <span class="toggle">+</span></h3>
-            <p>Les tarifs dépendent du jeu et des sessions choisies. Contactez-nous pour en savoir plus.</p>
+            <h3>Comment fonctionne le coaching ? <span class="toggle">+</span></h3>
+            <p>Nos sessions sont personnalisées selon vos besoins, avec un suivi complet.</p>
         </div>
         <div class="faq-item">
-            <h3>Quel est votre public cible ? <span class="toggle">+</span></h3>
-            <p>Nos coachs travaillent avec les débutants comme avec les experts.</p>
+            <h3>Combien coûtent vos services ? <span class="toggle">+</span></h3>
+            <p>Les tarifs dépendent du jeu et du nombre de sessions. Contactez-nous pour plus d'informations.</p>
         </div>
         <div class="faq-item">
-            <h3>Comment se déroule une session de coaching ? <span class="toggle">+</span></h3>
-            <p>Les sessions sont personnalisées, avec un suivi étape par étape.</p>
+            <h3>Quels niveaux acceptez-vous ? <span class="toggle">+</span></h3>
+            <p>Nos coachs travaillent avec les joueurs de tous niveaux.</p>
         </div>
     </section>
 
     <!-- Section Contact -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Nous Contacter</h2>
-        <p>Vous avez des questions ? Rejoignez-nous sur Discord pour démarrer votre coaching.</p>
+        <p>Rejoignez notre serveur Discord pour discuter avec nos coachs :</p>
         <a href="https://discord.gg/qjukbX7D" class="discord-link" target="_blank">Rejoignez-nous sur Discord</a>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Skill's Buff. Tous droits réservés.</p>
     </footer>
 </body>
