@@ -1,0 +1,89 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2e;
+    color: #f4f4f9;
+    line-height: 1.6;
+}
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(to right, #5865f2, #1e1e2e);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #ffcc00;
+}
+
+/* Bouton principal */
+.cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #ffcc00;
+    color: #1e1e2e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #e6b800;
+}
+
+/* Coaching Section */
+.section-coaching {
+    padding: 3rem 1rem;
+    background: #2a2a40;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.game-card {
+    background: #1e1e2e;
+    color: #ffcc00;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Témoignages */
+.testimonials {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: linear-gradient(to right, #ffcc00, #1e1e2e);
+}
+
+.testimonial-card {
+    background: white;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+/* Footer */
+footer {
+    background: #121214;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
